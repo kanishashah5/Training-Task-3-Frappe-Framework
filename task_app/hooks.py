@@ -28,6 +28,7 @@ app_license = "mit"
 # app_include_css = "/assets/task_app/css/task_app.css"
 # app_include_js = "/assets/task_app/js/task_app.js"
 # app_include_js = ["/assets/task_app/js/demo.js"]
+app_include_js = ["/assets/task_app/js/demo.js"]
 
 
 # include js, css files in header of web template

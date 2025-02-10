@@ -7,50 +7,20 @@
 // 	},
 // });
 
-frappe.ui.form.on('Collapse Doctype', {
-    refresh: function (frm) {
-        if (!frm.__remove_collapsible_button_added) {
-            frm.add_custom_button('Remove Collapsible', function () {
-                frappe.call({
-                    method: 'frappe.client.get_list',
-                    args: {
-                        doctype: 'DocField',
-                        filters: {
-                            parent: frm.doctype,
-                            fieldtype: 'Section Break' // Get all Section Break fields
-                        },
-                        fields: ['fieldname']
-                    },
-                    callback: function (response) {
-                        if (response.message && response.message.length > 0) {
-                            response.message.forEach(section => {
-                                frappe.call({
-                                    method: 'frappe.client.insert',
-                                    args: {
-                                        doc: {
-                                            doctype: 'Property Setter',
-                                            doc_type: frm.doctype,
-                                            property: 'collapsible',
-                                            value: '0',
-                                            property_type: 'Int',
-                                            apply_to: 'Field',
-                                            field_name: section.fieldname // Apply collapsible to this field
-                                        }
-                                    },
-                                    callback: function () {
-                                        frappe.show_alert(__('Collapsible removed from section: ' + section.fieldname));
-                                    }
-                                });
-                            });
-                            frappe.msgprint(__('Collapsible removed from all sections. Please refresh to apply changes.'));
-                        } else {
-                            frappe.msgprint(__('No Section Break fields found.'));
-                        }
-                    }
-                });
-            });
-
-            frm.__remove_collapsible_button_added = true;
-        }
-    }
-});
+// frappe.ui.form.on('Collapse Doctype', {
+//     refresh: function(frm) {
+//         frm.add_custom_button(__('Remove Collapsible Sections'), function() {
+//             frappe.call({
+//                 method: 'your_app.your_module.utils.remove_collapsible_sections',
+//                 args: {
+//                     doctype: frm.doctype
+//                 },
+//                 callback: function(response) {
+//                     if (response.message) {
+//                         frappe.msgprint(__('Collapsible sections removed. Please refresh the page.'));
+//                     }
+//                 }
+//             });
+//         });
+//     }
+// });
