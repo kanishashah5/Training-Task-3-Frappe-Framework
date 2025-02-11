@@ -8,7 +8,8 @@
   "first_name",
   "attachment",
   "barcode",
-  "date"
+  "date",
+  "email"
  ],
  "fields": [
   {
@@ -30,11 +31,16 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-31 16:03:44.522504",
+ "modified": "2025-02-11 14:55:31.173446",
  "modified_by": "Administrator",
  "module": "First Module",
  "name": "Demo DocType",
