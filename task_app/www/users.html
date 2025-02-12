@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+</head>
+<body>
+    <h1>List of Users(Doctype - 1)</h1>
+    <ul>
+        {% for user in users %}
+        <li>{{ user.first_name }} {{ user.surname }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>User Details(DocType - 2 )</h2>
+
+{% for user in user_details %}
+    <hr>
+    <p><strong>Name:</strong> {{ user.first_name }} {{ user.last_name }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+
+    {% if user.family_members %}
+        <h4>Family Members</h4>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Relation</th>
+                <th>Age</th>
+            </tr>
+            {% for member in user.family_members %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ member.name }}</td>
+                <td>{{ member.relation }}</td>
+                <td>{{ member.age }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No family members available.</p>
+    {% endif %}
+{% endfor %}
+</body>
+</html>

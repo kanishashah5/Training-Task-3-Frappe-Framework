@@ -1,13 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoname",
- "creation": "2025-02-11 18:37:13.006800",
+ "autoname": "format:U-{YYYY}-{#####}",
+ "creation": "2025-02-12 11:59:11.449218",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "first_name",
-  "surname"
+  "middle_name",
+  "surname",
+  "age",
+  "full_name"
  ],
  "fields": [
   {
@@ -16,17 +19,33 @@
    "label": "First Name"
   },
   {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
    "fieldname": "surname",
    "fieldtype": "Data",
    "label": "Surname"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-12 10:52:58.996660",
+ "modified": "2025-02-12 12:06:48.991524",
  "modified_by": "Administrator",
  "module": "First Module",
- "name": "Testing_NamingSeries",
+ "name": "Users_DynamicPage",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
