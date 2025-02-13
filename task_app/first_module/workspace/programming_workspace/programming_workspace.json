@@ -1,6 +1,11 @@
 {
- "charts": [],
- "content": "[{\"id\":\"QsEbnQn4p7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Programming Workspace</span>\",\"col\":12}},{\"id\":\"xRxmHLiepk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Server Side Scripting\",\"col\":3}},{\"id\":\"4DAoWaPeh9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Client-Side-Scripting\",\"col\":3}},{\"id\":\"Fz9KzYxTd0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Property DocType\",\"col\":3}},{\"id\":\"fa98PJ_oPM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Single DocType\",\"col\":3}},{\"id\":\"qbVwiS36FQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tree DocType\",\"col\":3}},{\"id\":\"cwkXUOr_7H\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Submittable DocType\",\"col\":3}},{\"id\":\"qpr9c4f7Ww\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Demo DocType\",\"col\":3}}]",
+ "charts": [
+  {
+   "chart_name": "Chart One",
+   "label": "Chart 1 Demo"
+  }
+ ],
+ "content": "[{\"id\":\"QsEbnQn4p7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Programming Workspace</span>\",\"col\":12}},{\"id\":\"3lfSo5xcrp\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"xRxmHLiepk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Server Side Scripting\",\"col\":4}},{\"id\":\"4DAoWaPeh9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Client-Side-Scripting\",\"col\":3}},{\"id\":\"Fz9KzYxTd0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Property DocType\",\"col\":4}},{\"id\":\"fa98PJ_oPM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Single DocType\",\"col\":3}},{\"id\":\"qbVwiS36FQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tree DocType\",\"col\":3}},{\"id\":\"cwkXUOr_7H\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Submittable DocType\",\"col\":3}},{\"id\":\"qpr9c4f7Ww\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Demo DocType\",\"col\":3}}]",
  "creation": "2025-02-03 11:54:32.777024",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +18,7 @@
  "is_hidden": 0,
  "label": "Programming Workspace",
  "links": [],
- "modified": "2025-02-05 10:17:56.552988",
+ "modified": "2025-02-13 18:27:06.784685",
  "modified_by": "Administrator",
  "module": "First Module",
  "name": "Programming Workspace",
@@ -34,7 +39,7 @@
    "type": "DocType"
   },
   {
-   "color": "Grey",
+   "color": "Green",
    "doc_view": "List",
    "label": "Server Side Scripting",
    "link_to": "Server Side Scripting",
