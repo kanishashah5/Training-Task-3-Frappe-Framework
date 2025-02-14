@@ -1,0 +1,11 @@
+.demo-class{
+    text-align: end;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 20px;
+    color: blueviolet;
+}

@@ -106,6 +106,7 @@ def get_chart_data(data):
 		'height': 300,
 	}
 
+	
 	return chart
 
 def get_report_summary(data):
