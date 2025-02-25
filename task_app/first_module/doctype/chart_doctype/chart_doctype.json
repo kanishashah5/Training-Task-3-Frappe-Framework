@@ -1,35 +1,24 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "Prompt",
- "creation": "2025-02-10 18:54:29.690713",
+ "creation": "2025-02-20 11:23:01.583940",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "f_name",
-  "surname"
+  "section_break_wfx6"
  ],
  "fields": [
   {
-   "fieldname": "f_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "First Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "surname",
-   "fieldtype": "Data",
-   "label": "Surname"
+   "fieldname": "section_break_wfx6",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-25 16:17:13.174158",
+ "modified": "2025-02-20 11:23:01.583940",
  "modified_by": "Administrator",
  "module": "First Module",
- "name": "Person",
- "naming_rule": "Set by user",
+ "name": "Chart Doctype",
  "owner": "Administrator",
  "permissions": [
   {
