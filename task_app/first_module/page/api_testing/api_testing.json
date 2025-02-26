@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-02-26 11:32:39.252506",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-02-26 11:32:39.252506",
+ "modified_by": "Administrator",
+ "module": "First Module",
+ "name": "api-testing",
+ "owner": "Administrator",
+ "page_name": "api-testing",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "API Testing"
+}
