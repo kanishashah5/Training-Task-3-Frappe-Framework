@@ -1,36 +1,38 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "Prompt",
- "creation": "2025-02-10 18:54:29.690713",
+ "creation": "2025-02-28 12:38:10.128613",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "f_name",
-  "surname"
+  "library_name",
+  "location",
+  "articles_list"
  ],
  "fields": [
   {
-   "fieldname": "f_name",
+   "fieldname": "library_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "First Name",
-   "reqd": 1
+   "label": "Library Name"
   },
   {
-   "fieldname": "surname",
+   "fieldname": "location",
    "fieldtype": "Data",
-   "label": "Surname"
+   "label": "Location"
+  },
+  {
+   "fieldname": "articles_list",
+   "fieldtype": "Table",
+   "label": "Articles List",
+   "options": "Articles"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 17:16:59.078949",
+ "modified": "2025-02-28 12:57:09.846576",
  "modified_by": "Administrator",
  "module": "First Module",
- "name": "Person",
- "naming_rule": "Set by user",
+ "name": "Library",
  "owner": "Administrator",
  "permissions": [
   {

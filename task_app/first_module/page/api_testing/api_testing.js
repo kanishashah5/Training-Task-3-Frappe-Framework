@@ -17,7 +17,7 @@ frappe.pages['api-testing'].on_page_load = function(wrapper) {
 	
 // ---------------GET--------------- 
 		$('#get-data').on('click', function() {
-			fetch('/api/resource/Person/Person-01', {
+			fetch('/api/resource/Person	/Person-01', {
 				method: 'GET',
 				headers: {
 					'Authorization': 'token 36c9dac3d1497d8:138036820dd9c82',

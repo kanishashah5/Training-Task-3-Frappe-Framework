@@ -1,36 +1,48 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "Prompt",
- "creation": "2025-02-10 18:54:29.690713",
+ "creation": "2025-02-28 12:40:09.279131",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "f_name",
-  "surname"
+  "title",
+  "author",
+  "publication_date",
+  "status"
  ],
  "fields": [
   {
-   "fieldname": "f_name",
+   "fieldname": "title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "First Name",
-   "reqd": 1
+   "label": "Title"
   },
   {
-   "fieldname": "surname",
+   "fieldname": "author",
    "fieldtype": "Data",
-   "label": "Surname"
+   "in_list_view": 1,
+   "label": "Author"
+  },
+  {
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Publication Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nIssued"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 17:16:59.078949",
+ "modified": "2025-02-28 13:19:18.700957",
  "modified_by": "Administrator",
  "module": "First Module",
- "name": "Person",
- "naming_rule": "Set by user",
+ "name": "Articles",
  "owner": "Administrator",
  "permissions": [
   {
